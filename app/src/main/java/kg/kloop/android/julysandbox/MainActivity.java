@@ -29,13 +29,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Mouse mouse = new Mouse();
-        Cat cat = new Cat(mouse, 3);
-
-        Cat cat1 = new Cat();
-        cat1.setLegs(3);
-        cat1.setMouse(mouse);
-
         xoModel = new XoModel();
         xoController = new XoController(xoModel);
         button00 = findViewById(R.id.button00);
